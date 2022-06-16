@@ -19,8 +19,26 @@ function getAnimal(req, res) {
         res.send(error);
     }
 }
+
+function getAnimals(req, res) {
+    try {
+        const rawdata = fs.readFileSync('data.json');
+        const animals = JSON.parse(rawdata);
+        let picked = [];
+        animals.forEach(animal => {
+            picked.push({name: animal.name, avatar: animal.avatar})
+        });
+        
+        if (picked) return res.send(picked)
+        else { res.status(500).send(`ENOTEXIST: cannot find animal ${req.params.name}`) }
+    } catch (error) {
+        console.error(error);
+        res.send(error);
+    }
+}
 router
     .use(BodyParser.json())
+    .get("/", getAnimals)
     .get("/:name", getAnimal)
 
 module.exports = { router };
