@@ -24,6 +24,7 @@ app.use(BodyParser.urlencoded({
   extended: true
 }));
 
+app.get("/", (req, res) => { res.send("WildLife 3D API")});
 /**
  * @type {{ path: string, router: express.Router}}
  */
