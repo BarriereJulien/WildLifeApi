@@ -26,7 +26,7 @@ function getAnimals(req, res) {
         const animals = JSON.parse(rawdata);
         let picked = {animals: []};
         animals.forEach(animal => {
-            picked.animals.push({ name: animal.name, avatar: animal.avatar })
+            picked.animals.push(animal)
         });
         if (picked) return res.send(picked)
         else { res.status(500).send(`ENOTEXIST: cannot find animal ${req.params.name}`) }

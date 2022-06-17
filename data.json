@@ -32,38 +32,20 @@
         "status": ""
     },
     {
-        "name": "Elephant",
+        "name": "Elephant d'asie",
         "species": "Mammifere",
-        "scienceName": {
-            "elephant d'asie": "Elephas maximus",
-            "elephant d'afrique": "lephas maximus"
-        },
-        "heigth": {
-            "elephant d'asie": "3m",
-            "elephant d'afrique": "3,3m"
-        },
-        "weigth": {
-            "elephant d'asie": "4 tonnes",
-            "elephant d'afrique": "5 à 6 tonnes"
-        },
+        "scienceName": "lephas maximus",
+        "heigth": "3,3m",
+        "weigth": "5 à 6 tonnes",
         "desc": "",
-        "liveZone": "Asie, Afrique",
+        "liveZone": "Afrique",
         "liveZoneImage": "https://res.cloudinary.com/epitech1/image/upload/v1654936953/place/elephant.png",
         "avatar": "https://res.cloudinary.com/epitech1/image/upload/v1654940404/avatar/elephant.jpg",
-        "count": {
-            "elephant d'asie": "de 40 000 à 50 000 individus",
-            "elephant d'afrique": "415 000 individus environ"
-        },
-        "lifeRange": {
-            "elephant d'asie": "48 ans",
-            "elephant d'afrique": "60 - 70 ans"
-        },
+        "count": "415 000 individus environ",
+        "lifeRange":"60 - 70 ans",
         "about": "",
         "diet": "Herbivore",
-        "status": {
-            "elephant d'asie": "En danger d'extinction",
-            "elephant d'afrique": "En danger critique d'extinction"
-        }
+        "status": "En danger critique d'extinction"
     },
     {
         "name": "Hippopotame",
